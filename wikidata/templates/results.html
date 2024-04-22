@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wikidata - Data Access</title>
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card p {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results!</h1>
+    {% for d in data %}
+        <div class="card">
+            <h3>{{ d['label'] }}:</h3>
+            <p>{{ d['description'] }}</p>
+            <a href="{{ d['url'] }}">Link</a>
+        </div>
+    {% endfor %}
+    
+</body>
+</html>
