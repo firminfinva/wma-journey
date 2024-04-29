@@ -7,7 +7,7 @@ def fetchData(searchQuery=""):
         "action": "wbsearchentities",
         "format": "json",
         "search": searchQuery,
-        "language": "en"
+        "language": "fr"
     }
 
     headers = {
